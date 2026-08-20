@@ -170,15 +170,24 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; margin: 0; color:
 /* ---------- Event ---------- */
 .event { padding: 100px 0; }
 .event-note { color: var(--ink-soft); font-size: 0.85rem; margin-top: -32px; margin-bottom: 40px; }
-.event-card {
-  display: grid; grid-template-columns: 1fr 1fr; align-items: center;
-  background: var(--tan-soft); border-radius: 24px; overflow: hidden; gap: 0;
+.event-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 32px; }
+.event-item {
+  display: flex; gap: 24px;
+  background: var(--tan-soft); border-radius: 24px; padding: 32px;
 }
-.event-img { width: 100%; height: 100%; object-fit: cover; min-height: 260px; }
-.event-body { padding: 40px; }
-.event-tags { color: var(--olive); font-size: 0.85rem; margin-bottom: 10px; }
-.event-body h3 { font-size: 1.25rem; margin-bottom: 12px; }
-.event-detail { color: var(--ink-soft); margin-bottom: 24px; }
+.event-date {
+  flex: none; width: 72px; height: 72px; border-radius: 16px;
+  background: var(--brown); color: #fff; text-align: center;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.event-date-day { font-family: var(--font-serif); font-size: 1.6rem; line-height: 1.1; }
+.event-date-month { font-size: 0.7rem; letter-spacing: 0.1em; margin-top: 2px; }
+.event-item-body { flex: 1; }
+.event-tags { color: var(--olive); font-size: 0.85rem; margin-bottom: 8px; }
+.event-item-body h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.event-detail { color: var(--ink-soft); font-size: 0.88rem; margin-bottom: 20px; }
+.event-ongoing { text-align: center; color: var(--ink-soft); font-size: 0.9rem; }
+.event-ongoing a { color: var(--brown-dark); border-bottom: 1px solid var(--brown); margin-left: 4px; }
 
 /* ---------- Voice ---------- */
 .voice { padding: 100px 0; background: var(--cream); }
@@ -253,7 +262,8 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; margin: 0; color:
   .about-steps { grid-template-columns: 1fr; gap: 32px; }
   .mvv { grid-template-columns: 1fr; }
   .service-card { grid-template-columns: 1fr; }
-  .event-card { grid-template-columns: 1fr; }
+  .event-grid { grid-template-columns: 1fr; }
+  .event-item { flex-direction: column; }
   .voice-grid { grid-template-columns: 1fr; }
   .profile-inner { grid-template-columns: 1fr; }
   .profile-img { max-width: 240px; margin: 0 auto; }

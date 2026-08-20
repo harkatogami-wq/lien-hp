@@ -4,16 +4,17 @@ const LINKS = {
   line: "https://utage-system.com/line/open/xe5Fn3q5YbF2?mtid=WSvCfRkiXhnn",  // LINE公式アカウント 友だち追加
   booking: "https://utage-system.com/p/yUTOiAhUpUHb",  // 無料相談 申込みページ（UTAGE）に統一
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
+  nukumori: "https://utage-system.com/p/RJt07qh92MBC",  // 9/28 発達相談室ぬくもり 詳細・申し込み
+  firstBirthday: "https://half-first-birthday-lp.pages.dev",  // 9/29 ファーストバースデー・ハーフバースデー 詳細・申し込み
+  privacy: "https://drive.google.com/file/d/1J3d7jebkKoGBcOABSWBI7sfjDxU95dGi/view?usp=sharing",  // プライバシーポリシー
 };
 
 document.querySelectorAll("[data-link]").forEach((el) => {
   const key = el.getAttribute("data-link");
   if (LINKS[key] && LINKS[key] !== "#") {
     el.setAttribute("href", LINKS[key]);
-    if (key === "line" || key === "instagram" || key === "booking") {
-      el.setAttribute("target", "_blank");
-      el.setAttribute("rel", "noopener");
-    }
+    el.setAttribute("target", "_blank");
+    el.setAttribute("rel", "noopener");
   }
 });
 
