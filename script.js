@@ -1,9 +1,9 @@
 // ===== 申込み導線リンク設定 =====
 // ここのURLを差し替えるだけで、サイト全体のボタンが更新されます。
 const LINKS = {
-  line: "#",       // TODO: LINE公式アカウントの「友だち追加」URLに差し替え（例: https://lin.ee/xxxxxxx）
+  line: "https://utage-system.com/line/open/xe5Fn3q5YbF2?mtid=WSvCfRkiXhnn",  // LINE公式アカウント 友だち追加
   booking: "#",     // TODO: オンライン予約リンクに差し替え（例: STORES予約、Googleカレンダー予約など）
-  instagram: "#",   // TODO: Instagramアカウント（Lienの発信用）のURLに差し替え
+  instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
 };
 
 document.querySelectorAll("[data-link]").forEach((el) => {
