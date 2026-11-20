@@ -272,3 +272,26 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 600; margin: 0; color:
   .footer-links { grid-template-columns: 1fr 1fr; }
   .hero-lead { max-width: 100%; }
 }
+
+/* ---------- Guide（さいたま市でベビーマッサージ教室をお探しの方へ） ---------- */
+.about-intro-text { color: var(--ink-soft); font-size: 0.95rem; }
+.guide { padding: 100px 0; }
+.guide-lead { color: var(--ink-soft); font-size: 0.95rem; max-width: 720px; margin: 0 0 40px; }
+.guide-info { display: grid; grid-template-columns: 150px 1fr; margin: 0 0 64px; border-top: 1px solid var(--tan); }
+.guide-info dt, .guide-info dd { margin: 0; padding: 18px 8px; border-bottom: 1px solid var(--tan); font-size: 0.92rem; }
+.guide-info dt { font-family: var(--font-serif); color: var(--brown-dark); }
+.guide-info dd { color: var(--ink-soft); }
+.guide-faq-title { font-size: 1.2rem; margin-bottom: 24px; }
+.guide-faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.guide-faq-item { background: var(--tan-soft); border-radius: 20px; padding: 26px 28px; }
+.guide-q { font-family: var(--font-serif); font-weight: 600; margin: 0 0 10px; }
+.guide-q::before { content: "Q. "; color: var(--brown); }
+.guide-a { color: var(--ink-soft); font-size: 0.9rem; margin: 0; }
+.hero-eyebrow { line-height: 1.8; }
+.hero-area { font-size: 0.85rem; letter-spacing: 0.08em; }
+@media (max-width: 760px) {
+  .guide-info { grid-template-columns: 1fr; }
+  .guide-info dt { border-bottom: none; padding-bottom: 0; }
+  .guide-info dd { padding-top: 6px; }
+  .guide-faq { grid-template-columns: 1fr; }
+}

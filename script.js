@@ -1,8 +1,8 @@
 // ===== 申込み導線リンク設定 =====
 // ここのURLを差し替えるだけで、サイト全体のボタンが更新されます。
 const LINKS = {
-  line: "https://utage-system.com/line/open/xe5Fn3q5YbF2?mtid=WSvCfRkiXhnn",  // LINE公式アカウント 友だち追加
-  booking: "https://utage-system.com/p/yUTOiAhUpUHb",  // 無料相談 申込みページ（UTAGE）に統一
+  line: "https://line-harness-haruka.harka-togami.workers.dev/r/h-lien",  // LINE公式アカウント 友だち追加
+  booking: "https://lien-tokuten.pages.dev/hotto",  // 無料相談 申込みページ（UTAGE）に統一
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
   nukumori: "https://nukumori-lp.pages.dev/",  // 9/28 発達相談室ぬくもり 詳細・申し込み
   firstBirthday: "https://half-first-birthday-lp.pages.dev",  // 9/29 ファーストバースデー・ハーフバースデー 詳細・申し込み

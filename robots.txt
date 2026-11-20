@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lien-hp-5qp.pages.dev/sitemap.xml
